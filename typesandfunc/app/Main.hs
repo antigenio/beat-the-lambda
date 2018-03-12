@@ -5,4 +5,4 @@ combineStrings :: String -> String -> String
 combineStrings x y = x ++ y
 
 main :: IO ()
-main = putStrLn (combineStrings "Hello " "World!")
+main = putStrLn (combineStrings (head (words sayHi)) (head (tail (words sayHi))))
